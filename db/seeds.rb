@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+price = (1000..9000).to_a
+guest = (1..10).to_a
+
+puts 'start'
+10.times do
+  Flat.create!(
+  name: Faker::Games::Witcher.location,
+  address: Faker::Address.full_address,
+  description: Faker::GreekPhilosophers.quote,
+  price_per_night: price,
+  number_of_guests: guest
+  )
+end
+puts 'end'

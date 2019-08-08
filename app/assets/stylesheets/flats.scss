@@ -1,0 +1,34 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: rgba(0,0,0,0.02);
+}
+
+.flat-card{
+  background-color: rgba(0,0,0,0.01);
+  border-radius: 15px;
+  height:  40vh;
+  width: 75vh;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.05);
+  margin: 5px;
+}
+
+.flat-card:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-flow: row-wrap;
+  list-style: none;
+}
+
+h4 {
+  margin-top: 15px;
+}
