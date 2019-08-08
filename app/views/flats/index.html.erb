@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Flats</h1>
+  <div class="row">
+    <ul>
+    <% @flats.each do |flat| %>
+      <div class="flat-card">
+        <li> <h4><%= link_to flat.name, flat_path(flat) %></h4>
+        <p><%= flat.description %></p>
+        </li>
+      </div>
+    <% end %>
+    </ul>
+  </div>
+  <%= link_to new_flat_path do %>
+    <i class="fas fa-plus-circle"></i>
+  <% end %>
+</div>

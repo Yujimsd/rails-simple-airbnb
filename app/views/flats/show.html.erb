@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.description %></p>
+      <p>
+        <%= link_to edit_flat_path(@flat) do %>
+          <i class="fas fa-edit"></i>
+        <% end %>
+      </p>
+      <p>
+        <%= link_to flat_path(@flat), method: :delete do %>
+          <i class="fas fa-trash-alt"></i>
+        <% end %>
+      </p>
+      <p>
+        <%= link_to "Home", root_path  %>
+      </p>
+    </div>
+  </div>
+</div>
